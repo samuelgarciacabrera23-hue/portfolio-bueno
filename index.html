@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samuel García Cabrera · Portfolio</title>
+<meta name="description" content="Portfolio de Samuel García Cabrera, estudiante de CFGM Sistemas Microinformáticos y Redes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#inicio">Samuel García</a>
+  <nav>
+    <a href="#sobre-mi" data-i18n="nav_about">Sobre mí</a>
+    <a href="#curriculum" data-i18n="nav_cv">Currículum</a>
+    <a href="#proyectos" data-i18n="nav_proj">Proyectos</a>
+    <a href="#habilidades" data-i18n="nav_sk">Habilidades</a>
+    <a href="#contacto" data-i18n="nav_ct">Contacto</a>
+  </nav>
+  <div class="ctrl">
+    <select id="lang" aria-label="Idioma / Language">
+      <option value="es">Español</option><option value="en">English</option><option value="fr">Français</option>
+      <option value="de">Deutsch</option><option value="it">Italiano</option><option value="pt">Português</option>
+    </select>
+    <button id="theme" type="button" aria-label="Modo claro / oscuro">🌙</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <img class="foto" src="foto.jpg" alt="Retrato de Samuel García Cabrera" width="200" height="200">
+  <div>
+    <h1>Samuel<br><span>García Cabrera</span></h1>
+    <p class="role" data-i18n="role">Estudiante de CFGM Sistemas Microinformáticos y Redes</p>
+    <p class="actions">
+      <a class="btn" href="CV_Samuel_Garcia_Cabrera.pdf" download data-i18n="dl">Descargar CV (PDF)</a>
+      <a class="btn ghost" href="#contacto" data-i18n="contact">Contactar</a>
+    </p>
+  </div>
+</section>
+
+<section id="sobre-mi">
+  <h2 data-i18n="about_t">Sobre mí</h2>
+  <div class="two">
+    <p data-i18n="about_1">Soy una persona organizada y responsable, con ganas de empezar mi trayectoria profesional. Estudio el ciclo de grado medio de Sistemas Microinformáticos y Redes en San Juan Bosco, y he trabajado con equipos y redes reales durante mis prácticas en la Fundación FEMEPA.</p>
+    <p data-i18n="about_2">Busco una oportunidad laboral para aportar lo que he aprendido y seguir creciendo. Tengo disponibilidad para trasladarme a Olmedo (Valladolid).</p>
+  </div>
+</section>
+
+<section id="curriculum">
+  <h2 data-i18n="cv_t">Currículum</h2>
+  <div class="timeline">
+    <article>
+      <time>04/2026 – 06/2026</time>
+      <h3 data-i18n="job">Técnico microinformático</h3>
+      <p class="org">Fundación FEMEPA · <span data-i18n="intern">Contrato de prácticas</span></p>
+      <p data-i18n="job_d">Configuración de switches, routers, firewalls y VPNs. Instalación y mantenimiento de equipos informáticos.</p>
+    </article>
+    <article>
+      <time>09/2025 – <span data-i18n="now">Actualidad</span></time>
+      <h3 data-i18n="edu1">CFGM Sistemas Microinformáticos y Redes</h3>
+      <p class="org">CPEIPS San Juan Bosco · Las Palmas de Gran Canaria</p>
+    </article>
+    <article>
+      <time>2021 – 2025</time>
+      <h3 data-i18n="edu2">Educación Secundaria Obligatoria (ESO)</h3>
+      <p class="org">IES El Batán · Las Palmas de Gran Canaria</p>
+    </article>
+  </div>
+  <p><a class="btn" href="CV_Samuel_Garcia_Cabrera.pdf" download data-i18n="dl2">Descargar CV completo (PDF)</a></p>
+</section>
+
+<section id="proyectos">
+  <h2 data-i18n="proj_t">Proyectos</h2>
+  <div class="grid">
+    <article class="card">
+      <h3 data-i18n="p1_t">Prácticas en FEMEPA</h3>
+      <p data-i18n="p1_d">Configuración de switches, routers, firewalls y VPNs, e instalación y mantenimiento de equipos en un entorno profesional.</p>
+      <p class="tags"><span>Redes</span><span>Firewalls</span><span>VPN</span></p>
+    </article>
+    <article class="card">
+      <h3 data-i18n="p2_t">Proyecto ERASMUS+</h3>
+      <p data-i18n="p2_d">Voluntario y participante en el proyecto europeo del IES El Batán, con intercambio entre Las Palmas de Gran Canaria y Francia (2025–2026).</p>
+      <p class="tags"><span>Voluntariado</span><span>Europa</span></p>
+    </article>
+    <article class="card empty">
+      <h3 data-i18n="p3_t">Tu próximo proyecto</h3>
+      <p data-i18n="p3_d">Aquí puedes añadir un laboratorio de redes, el montaje de un PC o cualquier práctica del ciclo. Edita este bloque en <code>index.html</code>.</p>
+    </article>
+  </div>
+</section>
+
+<section id="habilidades">
+  <h2 data-i18n="sk_t">Habilidades</h2>
+  <div class="two">
+    <div>
+      <h3 data-i18n="sk_tech">Técnicas</h3>
+      <ul class="chips">
+        <li data-i18n="c1">Montaje y mantenimiento de PCs</li><li data-i18n="c2">Redes locales</li>
+        <li data-i18n="c3">Switches y routers</li><li data-i18n="c4">Firewalls y VPNs</li>
+      </ul>
+      <h3 data-i18n="sk_tools">Herramientas</h3>
+      <ul class="chips">
+        <li>Microsoft Word</li><li>Microsoft Excel</li><li>Microsoft PowerPoint</li>
+        <li>Google Drive</li><li>Google Docs</li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="sk_lang">Idiomas</h3>
+      <div class="lang"><span data-i18n="n_es">Español</span><div class="bar"><i style="width:100%"></i></div><small data-i18n="l_es">Lengua materna</small></div>
+      <div class="lang"><span data-i18n="n_en">Inglés</span><div class="bar"><i style="width:33%"></i></div><small data-i18n="l_en">A2 · Básico</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2 data-i18n="ct_t">Contacto</h2>
+  <div class="two">
+    <div>
+      <p data-i18n="ct_p">¿Tienes una oferta o quieres saber más? Escríbeme y te respondo lo antes posible.</p>
+      <p><a href="mailto:samuelgarciacabrera32@gmail.com">samuelgarciacabrera32@gmail.com</a><br>
+         <a href="tel:+34682047008">682 04 70 08</a></p>
+    </div>
+    <form id="form" novalidate>
+      <label><span data-i18n="f_name">Nombre</span> <input name="nombre" required autocomplete="name"></label>
+      <label><span data-i18n="f_mail">Tu email</span> <input name="email" type="email" required autocomplete="email"></label>
+      <label><span data-i18n="f_msg">Mensaje</span> <textarea name="mensaje" rows="4" required></textarea></label>
+      <button class="btn" type="submit" data-i18n="f_send">Enviar mensaje</button>
+      <p id="estado" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<div class="bg" aria-hidden="true"></div><canvas id="net" aria-hidden="true"></canvas>
+<div class="pal" id="pal" hidden>
+  <button data-bg="limpio" style="background:#f6f7f9" aria-label="Limpio"></button>
+  <button data-bg="aurora" style="background:linear-gradient(135deg,#2c5364,#7b2ff7)" aria-label="Aurora"></button>
+  <button data-bg="circuito" style="background:#08131f;box-shadow:inset 0 0 0 3px #1c8f86" aria-label="Circuito"></button>
+  <button data-bg="matrix" style="background:#020a05;box-shadow:inset 0 0 0 3px #00ff66" aria-label="Matrix"></button>
+  <button data-bg="red" style="background:#0b1220;box-shadow:inset 0 0 0 3px #2a9d8f" aria-label="Red"></button>
+  <button data-bg="sunset" style="background:linear-gradient(135deg,#ff512f,#dd2476)" aria-label="Sunset"></button>
+  <button data-bg="ocean" style="background:linear-gradient(135deg,#00c6ff,#0072ff)" aria-label="Ocean"></button>
+  <button data-bg="neon" style="background:linear-gradient(135deg,#ff00c8,#00e5ff)" aria-label="Neon"></button>
+</div>
+<button id="bgbtn" type="button" aria-label="Fondo / Background">🎨</button>
+<footer>© <span id="anio"></span> Samuel García Cabrera</footer>
+<script src="script.js"></script>
+</body>
+</html>
